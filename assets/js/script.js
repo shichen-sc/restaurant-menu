@@ -323,6 +323,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // load menu from const courseMenu after DOM is loaded
     createCourseMenu(courseMenu);
 
+    // add event listener 
     document.getElementById("user-input").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
             let searchItem = createSearchItem();

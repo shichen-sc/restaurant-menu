@@ -1,39 +1,116 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Restaurant Menu
 
-Welcome,
+The webpage is being written to present a restaurant menu which allows the user to filter the displayed menu by using the filter buttons or typing keywords in the input field.
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+- The Header
 
-## Codeanywhere Reminders
+  - The header here is straightforward, only contains a heading 1 "XXX Restaurant - Welcome to Our Menu"
+    ![A screenshot of the header](/assets/images/README/header.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+- The Text Input Field
 
-`python3 -m http.server`
+  - The Input field is being used as a search button
+    - It is written with a border with a border radius
+    - Once the user hover the mouse over it or click on it, the border and border radius disappear
+    - Besides the input field, there is no additional search button. Instead, a search svg is being used a background image
+      ![A screenshot of the input field](/assets/images/README/input-field.png)
+      ![A screenshot of the input field by being hovered over or clicked](/assets/images/README/input-field-hover.png)
+  - The user can type some keywords in the input field to search relevant dishes
+    - For example, meat, chicken, vegan, vegetable, etc
+    - The search will takes place once the user clicks on enter key
+    - The search process is comparing the keyword with the dishes' names and category parameters
+      ![A screenshot of the searching function](/assets/images/README/search-keyword.png)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- The Fitler Buttons
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+  - The next section below the input field is the section for filter buttons
+    - There are at the moment "appetizer", "main course", "dessert", "drinks", "featured", "vegan", "lunch meal" and "dinner meal"
+    - Once the user clicks on the filter button, the relevant dishes will be displayed
+    - The filter process is comparing the filter button id with the dishes' category parameters
+      ![A screenshot of the filter buttons](/assets/images/README/filter-button.png)
 
-`http_server`
+- The Dish Menu Section
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  - The last section is used to display the dishes
+    - The dishes are categorized into 4 main parts, "Appetizer", "Main Course", "Dessert", "Drinks"
+    - For each parts, there is a independent div with a different class name
+    - The dish menu is not written directly in the HTML, instead, it is being created using javascript "script.js" after the DOMContent is loaded
+    - The dish menu content is being displayed in grid in 2 columns
+    - For each dish, the text contents and the image are displayed in grid in 2 columns as well
+    ![A screenshot of the dish menu section](/assets/images/README/dish-menu.png)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- Javascript
+  - The script.js can be explained into 3 parts
+    - Variable
+        - 4 consts are defined, 3 for font icon from fontsawesome
+        - Variable courseMenu is an array which contains all the dishes information
+        - Inside this array, each dish is being maintained in one dictionary using key:parameter pair
+        - Depending on the complexity, the parameter can be an array, or a simple string, etc
+    - Logical Operation
+        - There 4 logical operations, all being written inside the function of 
+    - Function
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Testing
 
-To log into the Heroku toolbelt CLI:
+- I tested and confirmed that the page works in browsers: Chrome, Firefox
+- I confirm that this project is responsive
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Bugs
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Solved bugs
 
----
+- When the screen width is smaller as 950px, the anchor element in the header is not clickable
+  - The issue is that the hero image overlaps with the anchor. To solve, z-index: 1 is being added to the style for this anchor element
+  ```
+  #hero-text {
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+      clear: left;
+      z-index: 1;
+  }
+  ```
 
-Happy coding!
+### Unsolved bugs
+
+- As the navigation bar is being fixed on the top of the page, once i click on the next slide in the comment section, the view of the page will be reset to middle, as a result, part of the photo of the students are being hidden by the navigation bar, see the picture here
+  ![A screenshot of the bug](/assets/images/README/bug.png)
+
+## Validator Testing
+
+- HTML
+  - No erros were returned when passing through the official W3C validator
+- CSS
+  - No errors were found when passing through the official (Jigsaw) validator
+- Accessibility
+  - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools
+    ![A screenshot of the scores estimated by lighthouse](/assets/images/README/lighthouse.png)
+
+## Deployment
+
+- The site was deployed to Github pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - Click on Page from the side menu
+  - Choose main for the Branch, and click on save
+  - Wait and refresh the page, the link to the page should be generated
+- Link for the page:
+  - [Learn Through](https://shichen-sc.github.io/learn-through/)
+
+## Credits
+
+### Content
+
+- The code to make the social media links was taken from the CI [Love Running](https://github.com/shichen-sc/love-running) Project
+- The code for the comment section was referenced from [Codepen](https://codepen.io/Schepp/pen/WNbQByE)
+
+### Media
+
+- The images in the project were all take from [Freepik](https://www.freepik.com/free-photos-vectors)
+
+## To-Do
+
+- Solve the open bug (described above)
+- Write html as the link for the button "Start Learning" on the navigation bar, where the users can select the desired language and current level
+- Write html for Sign Up and Login
