@@ -98,7 +98,7 @@ The webpage is being written to present a restaurant menu which allows the user 
   - Choose main for the Branch, and click on save
   - Wait and refresh the page, the link to the page should be generated
 - Link for the page:
-  - [Learn Through](https://shichen-sc.github.io/learn-through/)
+  - [Restaurant Menu](https://shichen-sc.github.io/restaurant-menu/)
 
 ## Credits
 
