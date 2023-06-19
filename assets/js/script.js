@@ -21,7 +21,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 3.99,
-        img: "./assets/images/spring-rolls.png",
+        img: "./assets/images/spring-rolls.webp",
         desc: "traditional fried rice wrappers with vegetables"
     },
     {
@@ -34,7 +34,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 4.19,
-        img: "./assets/images/fried-dumplings.png",
+        img: "./assets/images/fried-dumplings.webp",
         desc: "crispy pan-fried dumplings with pork, cabbage, mushrooms, and garlic"
     },
     {
@@ -47,7 +47,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 4.19,
-        img: "./assets/images/cola-chicken.png",
+        img: "./assets/images/cola-chicken.webp",
         desc: "chicken wings cooked with cola drink and soy sauce"
     },
     {
@@ -60,7 +60,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 12.19,
-        img: "./assets/images/pork-ball.png",
+        img: "./assets/images/pork-ball.webp",
         desc: "pork meatball using breadcrumbs, water chestnuts, and aromatics, bursted with flavor"
     },
     {
@@ -73,7 +73,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 15.19,
-        img: "./assets/images/beijing-duck.png",
+        img: "./assets/images/beijing-duck.webp",
         desc: "sliced pieces of roast duck with crispy skin"
     },
     {
@@ -86,7 +86,7 @@ const courseMenu = [
             spicy: fontAwesomeSpicy
         },
         price: 15.19,
-        img: "./assets/images/kung-pao-chicken.png",
+        img: "./assets/images/kung-pao-chicken.webp",
         desc: "spicy, stir-fried dish made with cubes of chicken, peanuts, vegetables and chili peppers"
     },
     {
@@ -99,7 +99,7 @@ const courseMenu = [
             spicy: fontAwesomeSpicy
         },
         price: 15.19,
-        img: "./assets/images/beef-brisket-casserole.png",
+        img: "./assets/images/beef-brisket-casserole.webp",
         desc: "Simmered beef brisket, radish and potatoes in a casserole dish"
     },
     {
@@ -112,7 +112,7 @@ const courseMenu = [
             spicy: fontAwesomeSpicy
         },
         price: 15.19,
-        img: "./assets/images/mapo-tofu.png",
+        img: "./assets/images/mapo-tofu.webp",
         desc: "sliced pieces of roast duck with crispy skin, served with rice"
     },
     {
@@ -125,7 +125,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 15.19,
-        img: "./assets/images/tender-green.png",
+        img: "./assets/images/tender-green.webp",
         desc: "pak choi being blanced and with most basic seasonings"
     },
     {
@@ -138,7 +138,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 15.19,
-        img: "./assets/images/braised-eggplant.png",
+        img: "./assets/images/braised-eggplant.webp",
         desc: "tender chunks of eggplant braised with garlic, chilies, soy sauce"
     },
     {
@@ -151,7 +151,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 15.19,
-        img: "./assets/images/chilled-okra.png",
+        img: "./assets/images/chilled-okra.webp",
         desc: "blanched okra with a sweetened soy sauce base"
     },
     {
@@ -164,7 +164,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 5.19,
-        img: "./assets/images/hot-pot.png",
+        img: "./assets/images/hot-pot.webp",
         desc: "hot pot served with sliced beef, mushrooms, vegetables"
     },
     {
@@ -177,7 +177,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 5.19,
-        img: "./assets/images/roujiamo.png",
+        img: "./assets/images/roujiamo.webp",
         desc: "stewed pork chopped in baijimo, a type of flatbread"
     },
     {
@@ -190,7 +190,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 5.19,
-        img: "./assets/images/rice-noodle-roll.png",
+        img: "./assets/images/rice-noodle-roll.webp",
         desc: "shrimp rice noodle rools, wrapped around plump shrimp, doused in a sweet soy sauce"
     },
     {
@@ -203,7 +203,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 5.19,
-        img: "./assets/images/chongyang-cake.png",
+        img: "./assets/images/chongyang-cake.webp",
         desc: "traditional cake made up of rice flour and sugar, decorated with chestnuts and almonds"
     },
     {
@@ -216,7 +216,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 5.19,
-        img: "./assets/images/mooncake.png",
+        img: "./assets/images/mooncake.webp",
         desc: "traditional vegetarian mooncake"
     },
     {
@@ -229,7 +229,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 5.19,
-        img: "./assets/images/macaron.png",
+        img: "./assets/images/macaron.webp",
         desc: "French macarons, delicate sandwich cookies with a crisp exterior"
     },
     {
@@ -242,7 +242,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 5.19,
-        img: "./assets/images/lime-lemon.png",
+        img: "./assets/images/lime-lemon.webp",
         desc: "ice soda mixed with lime and lemon"
     },
     {
@@ -255,7 +255,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 5.19,
-        img: "./assets/images/fresh-orange.png",
+        img: "./assets/images/fresh-orange.webp",
         desc: "ice soda mixed with fresh orange juice"
     },
     {
@@ -268,7 +268,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 5.19,
-        img: "./assets/images/coffee-cream.png",
+        img: "./assets/images/coffee-cream.webp",
         desc: "ice coffee dressed with fresh choco cream"
     },
     {
@@ -281,7 +281,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 5.19,
-        img: "./assets/images/qing-dao-beer.png",
+        img: "./assets/images/qing-dao-beer.webp",
         desc: "qingdao beer, a chinese beer brand"
     },
     {
@@ -294,7 +294,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 5.19,
-        img: "./assets/images/coffee.png",
+        img: "./assets/images/coffee.webp",
         desc: "coffee Latte"
     },
     {
@@ -307,7 +307,7 @@ const courseMenu = [
             spicy: ""
         },
         price: 5.19,
-        img: "./assets/images/tea.png",
+        img: "./assets/images/tea.webp",
         desc: "traditional Chinese tea"
     },
 ];
@@ -323,7 +323,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // load menu from const courseMenu after DOM is loaded
     createCourseMenu(courseMenu);
 
-    // add event listener 
+    // add event listener of enter key for input field for search purpose
     document.getElementById("user-input").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
             let searchItem = createSearchItem();
@@ -404,7 +404,7 @@ function createCourseMenu(menuRawData) {
                         <h3 class="food-price">$${item.price}</h3>
                     </div>
                     <div class="food-image">
-                        <img src="${item.img}"/>
+                        <img src="${item.img}" alt="a picture of ${item.title}"/>
                     </div>
                 </div>
             `;
@@ -423,7 +423,7 @@ function createCourseMenu(menuRawData) {
                         <h3 class="prices">$${item.price}</h3>
                     </div>
                     <div class="food-image">
-                        <img src="${item.img}"/>
+                        <img src="${item.img}" alt="a picture of ${item.title}"/>
                     </div>
                 </div>
             `;
@@ -442,7 +442,7 @@ function createCourseMenu(menuRawData) {
                         <h3 class="prices">$${item.price}</h3>
                     </div>
                     <div class="food-image">
-                        <img src="${item.img}"/>
+                        <img src="${item.img}" alt="a picture of ${item.title}"/>
                     </div>
                 </div>
             `;
@@ -461,7 +461,7 @@ function createCourseMenu(menuRawData) {
                         <h3 class="prices">$${item.price}</h3>
                     </div>
                     <div class="food-image">
-                        <img src="${item.img}"/>
+                        <img src="${item.img}" alt="a picture of ${item.title}"/>
                     </div>
                 </div>
             `;

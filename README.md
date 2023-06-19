@@ -48,35 +48,31 @@ The webpage is being written to present a restaurant menu which allows the user 
         - Variable courseMenu is an array which contains all the dishes information
         - Inside this array, each dish is being maintained in one dictionary using key:parameter pair
         - Depending on the complexity, the parameter can be an array, or a simple string, etc
+        ![A screenshot of the variables](/assets/images/README/variables.png)
     - Logical Operation
-        - There 4 logical operations, all being written inside the function of 
+        - There 4 logical operations, all being written inside the function of the eventListener for DOMContentLoaded
+        - First of all, all the dish menus will be created according to the const courseMenu
+        - Then event listners are being added to the enter key down action of the input field, filter buttons
+        - depending on what is being searched and which filter button is being clicked, a corresponding array will be generated and passed to the main function createCourseMenu to display the menu that being searched or being filtered
+        ![A screenshot of the logical operation](/assets/images/README/logical-operation.png)
     - Function
+        - 3 main functions
+        - createCoureMenu is the main function to generate all the html inner content
+        - createFilterItem will return an array containing the menu being filtered
+        - createSearchItem will return an array containing the menu that matches the user search input
+        ![A screenshot of the function](/assets/images/README/filter-button.png)
 
 ## Testing
 
 - I tested and confirmed that the page works in browsers: Chrome, Firefox
-- I confirm that this project is responsive
+- I confirm that the features described above work
 
 ## Bugs
+- lighthouse check shows poor loading performance
 
 ### Solved bugs
 
-- When the screen width is smaller as 950px, the anchor element in the header is not clickable
-  - The issue is that the hero image overlaps with the anchor. To solve, z-index: 1 is being added to the style for this anchor element
-  ```
-  #hero-text {
-      top: 20%;
-      left: 50%;
-      transform: translate(-50%, -20%);
-      clear: left;
-      z-index: 1;
-  }
-  ```
-
 ### Unsolved bugs
-
-- As the navigation bar is being fixed on the top of the page, once i click on the next slide in the comment section, the view of the page will be reset to middle, as a result, part of the photo of the students are being hidden by the navigation bar, see the picture here
-  ![A screenshot of the bug](/assets/images/README/bug.png)
 
 ## Validator Testing
 
