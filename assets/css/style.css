@@ -42,3 +42,11 @@ h2 {
     border-radius: 50px;
     border: 1px solid #aba9a6;
 }
+
+.search-btn:hover,
+.search-btn:focus {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #575756;
+    border-radius: 0;
+    outline: 0;
+}
