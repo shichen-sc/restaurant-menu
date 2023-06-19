@@ -39,27 +39,27 @@ The webpage is being written to present a restaurant menu which allows the user 
     - The dish menu is not written directly in the HTML, instead, it is being created using javascript "script.js" after the DOMContent is loaded
     - The dish menu content is being displayed in grid in 2 columns
     - For each dish, the text contents and the image are displayed in grid in 2 columns as well
-    ![A screenshot of the dish menu section](/assets/images/README/dish-menu.png)
+      ![A screenshot of the dish menu section](/assets/images/README/dish-menu.png)
 
 - Javascript
   - The script.js can be explained into 3 parts
     - Variable
-        - 4 consts are defined, 3 for font icon from fontsawesome
-        - Variable courseMenu is an array which contains all the dishes information
-        - Inside this array, each dish is being maintained in one dictionary using key:parameter pair
-        - Depending on the complexity, the parameter can be an array, or a simple string, etc
+      - 4 consts are defined, 3 for font icon from fontsawesome
+      - Variable courseMenu is an array which contains all the dishes information
+      - Inside this array, each dish is being maintained in one dictionary using key:parameter pair
+      - Depending on the complexity, the parameter can be an array, or a simple string, etc
         ![A screenshot of the variables](/assets/images/README/variables.png)
     - Logical Operation
-        - There 4 logical operations, all being written inside the function of the eventListener for DOMContentLoaded
-        - First of all, all the dish menus will be created according to the const courseMenu
-        - Then event listners are being added to the enter key down action of the input field, filter buttons
-        - depending on what is being searched and which filter button is being clicked, a corresponding array will be generated and passed to the main function createCourseMenu to display the menu that being searched or being filtered
+      - There 4 logical operations, all being written inside the function of the eventListener for DOMContentLoaded
+      - First of all, all the dish menus will be created according to the const courseMenu
+      - Then event listners are being added to the enter key down action of the input field, filter buttons
+      - depending on what is being searched and which filter button is being clicked, a corresponding array will be generated and passed to the main function createCourseMenu to display the menu that being searched or being filtered
         ![A screenshot of the logical operation](/assets/images/README/logical-operation.png)
     - Function
-        - 3 main functions
-        - createCoureMenu is the main function to generate all the html inner content
-        - createFilterItem will return an array containing the menu being filtered
-        - createSearchItem will return an array containing the menu that matches the user search input
+      - 3 main functions
+      - createCoureMenu is the main function to generate all the html inner content
+      - createFilterItem will return an array containing the menu being filtered
+      - createSearchItem will return an array containing the menu that matches the user search input
         ![A screenshot of the function](/assets/images/README/filter-button.png)
 
 ## Testing
@@ -68,11 +68,17 @@ The webpage is being written to present a restaurant menu which allows the user 
 - I confirm that the features described above work
 
 ## Bugs
+
 - lighthouse check shows poor loading performance
+- The web page is not responsive yet. Upon the submission, i don't have enough time to write responsiveness
 
 ### Solved bugs
 
+- reduce the size of the image by converting them from png to webp stripping extra meta data using online converting tool
+
 ### Unsolved bugs
+
+- responsiveness
 
 ## Validator Testing
 
@@ -98,15 +104,8 @@ The webpage is being written to present a restaurant menu which allows the user 
 
 ### Content
 
-- The code to make the social media links was taken from the CI [Love Running](https://github.com/shichen-sc/love-running) Project
-- The code for the comment section was referenced from [Codepen](https://codepen.io/Schepp/pen/WNbQByE)
-
 ### Media
-
-- The images in the project were all take from [Freepik](https://www.freepik.com/free-photos-vectors)
 
 ## To-Do
 
-- Solve the open bug (described above)
-- Write html as the link for the button "Start Learning" on the navigation bar, where the users can select the desired language and current level
-- Write html for Sign Up and Login
+- Upon the submission, i don't have enough time to write responsiveness. Need to extend css to make the website responsive
